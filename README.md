@@ -23,8 +23,6 @@ The goal is to make studying more straightforward and efficient.
 
 ## Features
 
-## Features
-
 ### 1. Learn from your own materials
 - Upload or paste study materials (PDF / notes / text)
 - Translate content into a more understandable form  
