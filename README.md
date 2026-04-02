@@ -4,7 +4,7 @@
 
 **MyStudyHelper** is a simple learning tool that helps you understand and remember what you study.
 
-When reading materials—especially in a different language, it’s often hard to fully understand the content. Even after translating, it’s not always clear what the key ideas are. On top of that, creating flashcards manually takes time and effort.
+When reading materials, especially in a different language, it’s often hard to fully understand the content. Even after translating, it’s not always clear what the key ideas are. On top of that, creating flashcards manually takes time and effort.
 
 This project brings everything together in one place: translation, explanation, summarization, and flashcard generation.
 
