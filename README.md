@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+# 📘 MyStudyHelper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+**MyStudyHelper** is a simple learning tool that helps you understand and remember what you study.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+When reading materials—especially in a different language, it’s often hard to fully understand the content. Even after translating, it’s not always clear what the key ideas are. On top of that, creating flashcards manually takes time and effort.
 
-## React Compiler
+This project brings everything together in one place: translation, explanation, summarization, and flashcard generation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Motivation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Hard to understand learning materials in a foreign language
+- Translation alone is not enough  
+- Difficult to identify key points  
+- Creating flashcards manually is time-consuming  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The goal is to make studying more straightforward and efficient.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. Learn from your own materials
+- Upload or paste study materials (PDF / notes / text)
+- Translate content into a more understandable form  
+- Get clear explanations of concepts  
+- Generate summaries  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 2. Learn by asking questions
+- Ask AI questions to explore a topic  
+- Get structured explanations and summaries directly  
+
+### 3. Reinforce learning
+- Automatically generate flashcards from all outputs 
+
+---
+
+## How It Works
+
+### Path 1: From materials
+Input (PDF / Text / Notes)  
+        ↓  
+Translation  
+        ↓  
+Explanation + Summary  
+
+### Path 2: From questions
+Ask a question  
+        ↓  
+AI generates explanation + summary  
+
+### Final step
+All outputs → Flashcards
+
+---
+## Tech Stack
+
+**Frontend**
+- React (Vite + TypeScript)
+- Tailwind CSS
+
+**Backend**
+- Node.js / Express (planned)
+- Database (planned)
+
+**AI & APIs**
+- DeepL API (translation)
+- AI models (for explanation, summarization, flashcards)
+
+---
+
+## Future Plans
+
+- User accounts (login / profile)
+- Save and review flashcards
+- Smarter recommendations
+- Better UI and interaction
+
+---
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
