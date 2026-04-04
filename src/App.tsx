@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from './pages/LandingPage';
 import DashboardPage from './pages/DashboardPage';
+import RegisterPage from './pages/RegisterPage'
 import MenuBar from './components/MenuBar';
 import Sidebar from "./components/Sidebar";
 
@@ -34,6 +35,7 @@ export default function App() {
             </PrivateRoute>
           }
         />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
     </BrowserRouter>
   );

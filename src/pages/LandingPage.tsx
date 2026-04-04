@@ -1,4 +1,5 @@
 import { BookOpen, Sparkles } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import materials_img from '../assets/materials.jpg';
 import asking_img from '../assets/asking.jpg';
 
@@ -16,6 +17,7 @@ const cards = [
 ];
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-[#f5f6f8] flex flex-col justify-between">
       <div className="flex flex-1 px-10 py-8">
@@ -126,7 +128,9 @@ const LandingPage = () => {
 
             <p className="text-center text-base text-gray-500 mt-8">
               New here?{' '}
-              <button className="text-blue-600 font-medium hover:underline">
+              <button 
+               onClick={() => navigate('/register')}
+               className="text-blue-600 font-medium hover:underline">
                 Create an account
               </button>
             </p>
