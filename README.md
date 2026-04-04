@@ -63,8 +63,9 @@ All outputs → Flashcards
 - Tailwind CSS
 
 **Backend**
-- Node.js / Express (planned)
-- Database (planned)
+- Node.js / Express
+- Prisma ORM
+- PostgreSQL
 
 **AI & APIs**
 - DeepL API (translation)
